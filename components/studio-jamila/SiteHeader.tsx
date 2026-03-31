@@ -35,8 +35,8 @@ export default function SiteHeader() {
                 <Image
                   src="/studiojamilalogo-black.png"
                   alt="Studio Jamila"
-                  width={540}
-                  height={120}
+                  width={905}
+                  height={90}
                   className="h-[22px] w-auto md:h-[26px]"
                   priority
                   unoptimized
