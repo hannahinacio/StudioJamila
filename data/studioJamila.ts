@@ -58,7 +58,7 @@ export type StudioJamilaProject = {
 
 export const studioJamilaHome = {
   fingerFoods: {
-    title: '(finger foods)',
+    title: 'finger foods',
     images: [
       { src: '/finger-foods-home/IMG_8275.jpeg', alt: 'Finger food, editorial capture 1' },
       { src: '/finger-foods-home/IMG_5629.jpeg', alt: 'Finger food, editorial capture 2' },
@@ -85,7 +85,7 @@ export const studioJamilaHome = {
     ] as StudioJamilaImage[],
   },
   sitdownDinners: {
-    title: '(sitdown dinners)',
+    title: 'sitdown dinners',
     images: [
       { src: '/sit-down-home/100B7E4F-CF18-4978-8F17-5FE5ED8D2D2F.jpeg', alt: 'Sitdown dinner, editorial capture 1' },
       { src: '/sit-down-home/FullSizeRender.jpeg', alt: 'Sitdown dinner, editorial capture 2' },
@@ -115,7 +115,7 @@ export const studioJamilaHome = {
     ] as StudioJamilaImage[],
   },
   setDesign: {
-    title: '(set design & creative direction)',
+    title: 'set design & creative direction',
     images: [
       { src: '/creative/2da850a3-0919-4285-8587-2bea8a68c39a.jpeg', alt: 'Set design, editorial capture 1' },
       { src: '/creative/3790BB16-0CEC-4092-B7D8-79800138FE17.jpeg', alt: 'Set design, editorial capture 2' },
@@ -288,9 +288,9 @@ export const studioJamilaServices = {
 export const studioJamilaContact = {
   title: '(ready to work together?)',
   intro: "Let’s chat about how Studio Jamila can bring your vision to life.",
-  emailLabel: '(email)',
+  emailLabel: 'email',
   email: 'hi@studiojamila.com',
-  updatesLabel: '(updates)',
+  updatesLabel: 'updates',
   updatesText: 'follow us on our socials to keep up to date with what we are working on!',
   handle: '@studiojamila',
   image: { src: '/contact-image.jpeg', alt: 'Studio Jamila contact image' } as StudioJamilaImage,

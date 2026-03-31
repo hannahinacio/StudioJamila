@@ -12,7 +12,7 @@ export default function ContactPage() {
           <SplitSection
             left={
               <div className="flex flex-col gap-10">
-                <SJSectionTitle className="text-left text-sjFg">{studioJamilaContact.title}</SJSectionTitle>
+                <SJSectionTitle className="text-sjFg">{studioJamilaContact.title.replace(/[()]/g, '')}</SJSectionTitle>
                 <p className="max-w-[60ch] text-[18px] font-normal leading-[1.7] !text-black">{studioJamilaContact.intro}</p>
 
                 <div className="mt-2 space-y-10">

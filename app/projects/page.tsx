@@ -15,7 +15,7 @@ export default function ProjectsPage() {
     <div className="-mt-20 md:-mt-24">
       <section className="py-20">
         <PageContainer>
-          <SectionTitle className="text-left text-sjFg">(selected projects)</SectionTitle>
+          <SectionTitle className="text-sjFg">selected projects</SectionTitle>
           <div className="mt-10">
             <ProjectGrid projects={projects} />
           </div>

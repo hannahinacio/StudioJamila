@@ -3,13 +3,16 @@ import { studioJamilaAbout } from '@/data/studioJamila';
 import PageContainer from '@/components/studio-jamila/PageContainer';
 import SectionTitle from '@/components/studio-jamila/SectionTitle';
 import EditorialTextBlock from '@/components/studio-jamila/EditorialTextBlock';
+
+const stripParens = (value: string) => value.replace(/[()]/g, '');
+
 export default function AboutPage() {
   return (
     <div className="-mt-20 md:-mt-24">
       {/* Section 1: About intro */}
       <section className="py-20">
         <PageContainer>
-          <SectionTitle className="text-left text-sjFg">{studioJamilaAbout.title}</SectionTitle>
+          <SectionTitle className="text-sjFg">{stripParens(studioJamilaAbout.title)}</SectionTitle>
 
           <div className="mt-10 grid gap-8 lg:grid-cols-[1.35fr_0.65fr] lg:gap-6 xl:grid-cols-[1.2fr_0.9fr] xl:gap-8">
             <EditorialTextBlock className="font-normal text-[11px] leading-[1.08] tracking-[-0.02em] !text-black">
@@ -53,7 +56,7 @@ export default function AboutPage() {
       {/* Section 2: Meet the team */}
       <section className="py-20 -mt-20 md:-mt-24">
         <PageContainer>
-          <SectionTitle className="text-sjFg">{studioJamilaAbout.team.title}</SectionTitle>
+          <SectionTitle className="text-sjFg">{stripParens(studioJamilaAbout.team.title)}</SectionTitle>
           <div className="mt-10 mx-auto max-w-[280px] md:max-w-[340px]">
             <div className="relative overflow-hidden">
               {studioJamilaAbout.team.image.src.endsWith('.svg') ? (
@@ -87,7 +90,7 @@ export default function AboutPage() {
           <div className="grid gap-14 xl:grid-cols-3">
             {studioJamilaAbout.teamBios.map(bio => (
               <div key={bio.name} className="text-center">
-                <h3 className="text-sjFg text-[20px] font-normal tracking-wide">{bio.name}</h3>
+                <h3 className="text-sjFg text-[20px] font-normal tracking-wide">{stripParens(bio.name)}</h3>
                 <p className="mt-6 mx-auto max-w-[44ch] text-[18px] font-normal leading-[1.7] text-sjFg">
                   {bio.text}
                 </p>
