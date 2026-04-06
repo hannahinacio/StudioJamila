@@ -27,7 +27,7 @@ export default function HomeLabSplitFeatureSection() {
                 priority={false}
               />
             </div>
-            <div className="flex justify-between pt-0 text-[11px] font-medium uppercase tracking-[-0.02em] text-sjAccent md:text-xs sm:pt-0.5">
+            <div className="flex justify-between pt-0 text-[11px] font-medium uppercase tracking-[-0.02em] text-[#6A0C16] md:text-xs sm:pt-0.5">
               <span>Samsung</span>
               <span>2025</span>
             </div>
@@ -47,7 +47,7 @@ export default function HomeLabSplitFeatureSection() {
                 className="object-cover"
               />
             </div>
-            <div className="mt-4 flex justify-between text-[11px] font-medium uppercase tracking-[-0.02em] text-sjAccent md:text-xs">
+            <div className="mt-4 flex justify-between text-[11px] font-medium uppercase tracking-[-0.02em] text-[#6A0C16] md:text-xs">
               <span>Samsung</span>
               <span>2025</span>
             </div>

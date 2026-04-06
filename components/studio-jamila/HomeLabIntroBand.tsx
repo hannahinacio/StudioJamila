@@ -13,7 +13,7 @@ export default function HomeLabIntroBand() {
       style={{ backgroundColor: INTRO_BG }}
       aria-label="About Studio Jamila"
     >
-      <p className="mx-auto max-w-[76rem] text-center text-[15px] font-normal leading-[1.22] tracking-[-0.025em] text-sjBg sm:text-[17px] sm:leading-[1.2] md:text-[22px] md:leading-[1.22] md:tracking-[-0.03em]">
+      <p className="mx-auto max-w-[76rem] text-center text-[15px] font-normal leading-[1.22] tracking-[-0.025em] text-[#efeae3] sm:text-[17px] sm:leading-[1.2] md:text-[22px] md:leading-[1.22] md:tracking-[-0.03em]">
         {copy}
       </p>
     </section>

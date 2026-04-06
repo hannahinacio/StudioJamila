@@ -30,7 +30,7 @@ export default function HomeLabConceptShootSection() {
             />
           </div>
 
-          <div className="flex justify-between gap-3 pt-0 text-[11px] font-medium uppercase tracking-[-0.02em] text-sjAccent sm:col-start-1 sm:row-start-2 sm:pt-1 md:pt-2 md:text-xs">
+          <div className="flex justify-between gap-3 pt-0 text-[11px] font-medium uppercase tracking-[-0.02em] text-[#6A0C16] sm:col-start-1 sm:row-start-2 sm:pt-1 md:pt-2 md:text-xs">
             <span className="min-w-0 leading-snug">Studio Jamila concept shoot</span>
             <span className="shrink-0">2025</span>
           </div>

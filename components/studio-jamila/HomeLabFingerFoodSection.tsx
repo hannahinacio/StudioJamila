@@ -23,7 +23,7 @@ export default function HomeLabFingerFoodSection() {
   return (
     <section className="bg-sjBg">
       <PageContainer className="pt-8 pb-12 sm:pt-10 sm:pb-14 md:pt-12 md:pb-20">
-        <h2 className="mb-4 text-left text-[12px] font-medium uppercase leading-none tracking-[-0.04em] text-sjAccent sm:mb-6 sm:text-[13px] md:mb-8 md:text-[15px]">
+        <h2 className="mb-4 text-left text-[12px] font-medium uppercase leading-none tracking-[-0.04em] text-[#6A0C16] sm:mb-6 sm:text-[13px] md:mb-8 md:text-[15px]">
           Finger food
         </h2>
         <div className="grid grid-cols-2 gap-2 sm:grid-cols-3 sm:gap-2 md:grid-cols-5 md:gap-3">

@@ -32,7 +32,7 @@ export default function HomeLabMuglerHighlightSection() {
 
           <div className="hidden md:col-start-1 md:row-start-2 md:block" aria-hidden />
 
-          <div className="row-start-3 flex justify-between pt-0 text-[11px] font-medium uppercase tracking-[-0.02em] text-sjAccent md:col-span-2 md:col-start-2 md:row-start-2 md:pt-1 md:text-xs sm:pt-0.5">
+          <div className="row-start-3 flex justify-between pt-0 text-[11px] font-medium uppercase tracking-[-0.02em] text-[#6A0C16] md:col-span-2 md:col-start-2 md:row-start-2 md:pt-1 md:text-xs sm:pt-0.5">
             <span>Mugler</span>
             <span>2026</span>
           </div>
