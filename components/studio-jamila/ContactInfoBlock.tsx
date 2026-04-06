@@ -7,8 +7,12 @@ export default function ContactInfoBlock({
 }) {
   return (
     <div className="text-center md:text-left">
-      <p className="mb-3 text-[22px] font-normal tracking-wide !text-black lowercase">{label}</p>
-      <div className="text-[18px] font-normal leading-[1.7] !text-black">{value}</div>
+      <p className="mb-2 text-sm font-medium uppercase tracking-[-0.02em] text-[#6A0C16] md:text-base">
+        {label}
+      </p>
+      <div className="text-sm font-normal leading-[1.5] tracking-[-0.02em] text-[#6A0C16] md:text-base [&_a]:!text-[#6A0C16]">
+        {value}
+      </div>
     </div>
   );
 }

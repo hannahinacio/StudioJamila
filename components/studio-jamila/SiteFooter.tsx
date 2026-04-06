@@ -7,13 +7,13 @@ export default function SiteFooter() {
   const currentYear = 2026;
 
   return (
-    <footer className="relative bg-white pt-14 md:pt-20 pb-0">
+    <footer className="relative bg-sjBg pt-10 md:pt-14 pb-0">
       <div className="relative z-10 w-full max-w-none px-[15px]">
-        <div className="flex justify-center pb-10 md:pb-16">
+        <div className="flex justify-center pb-8 md:pb-12">
           <CTAButton href="mailto:hi@studiojamila.com" text="let’s work together!" />
         </div>
 
-      <div className="flex flex-col items-center gap-8 pb-10 text-center md:flex-row md:items-end md:justify-between md:gap-12 md:pb-14 md:text-left">
+      <div className="flex flex-col items-center gap-6 pb-8 text-center md:flex-row md:items-end md:justify-between md:gap-10 md:pb-10 md:text-left">
           <div className="space-y-1 text-sm font-normal lowercase leading-[1.15] text-sjFg">
             <p>
               <a

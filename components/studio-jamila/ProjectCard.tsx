@@ -14,7 +14,7 @@ export default function ProjectCard({ project }: { project: ProjectCardData }) {
       : '';
 
   return (
-    <article className="group">
+    <article className="group w-full max-w-[240px] sm:max-w-[230px] md:max-w-[210px] lg:max-w-[180px] xl:max-w-[190px]">
       <div className="relative overflow-hidden">
         <div className="relative aspect-[4/5] w-full">
           {project.image.src.endsWith('.svg') ? (
@@ -34,11 +34,12 @@ export default function ProjectCard({ project }: { project: ProjectCardData }) {
               fill
               sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 25vw"
               className={`object-cover${extraImageClass}`}
+              unoptimized
             />
           )}
         </div>
       </div>
-      <h3 className="mt-6 text-[18px] font-normal leading-[1.7] !text-black">
+      <h3 className="mt-4 max-w-full text-left text-sm font-medium uppercase leading-snug tracking-[-0.02em] text-[#6A0C16] md:text-base">
         {project.title}
       </h3>
     </article>

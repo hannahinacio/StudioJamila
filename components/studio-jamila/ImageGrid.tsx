@@ -29,7 +29,7 @@ export default function ImageGrid({
     variant === 'home'
       ? 'grid-cols-1 md:grid-cols-2 xl:grid-cols-4'
       : variant === 'five'
-        ? 'grid-cols-1 md:grid-cols-2 xl:grid-cols-5'
+        ? 'grid-cols-2 sm:grid-cols-3 md:grid-cols-5'
       : variant === 'four'
         ? 'grid-cols-1 md:grid-cols-2 xl:grid-cols-4'
         : variant === 'three'
@@ -39,7 +39,10 @@ export default function ImageGrid({
   return (
     <div className={`grid ${gridClassName} ${gapClassName}`}>
       {images.map((img, idx) => (
-        <figure key={`${img.src}-${idx}`} className="group relative overflow-hidden">
+        <figure
+          key={`${img.src}-${idx}`}
+          className={`group relative overflow-hidden ${variant === 'five' && idx === images.length - 1 ? 'hidden md:block' : ''}`}
+        >
           <div className={`relative ${aspectToClass[aspect]} w-full`}>
             {/** Slightly tighter crop only for the first finger-foods image */}
             {(() => {
@@ -70,6 +73,7 @@ export default function ImageGrid({
                   fill
                   sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 25vw"
                   className={`object-cover${extraImageClass}`}
+                  unoptimized
                 />
               );
             })()}

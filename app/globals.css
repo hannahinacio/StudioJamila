@@ -1,13 +1,35 @@
-@import "tailwindcss";
+/* File URL avoids resolving the `tailwindcss` package from the parent folder when the IDE
+   workspace is `STUDIOJAMILA/` (no package.json / node_modules there). */
+@import url("../node_modules/tailwindcss/index.css");
 
 @theme inline {
-  --color-sjBg: #ffffff;
+  --color-sjBg: #efeae3;
   --color-sjFg: #111111;
-  --color-sjAccent: #6A0C16;
+  --color-sjAccent: #6a0c16;
   --color-sjLine: rgba(17, 17, 17, 0.12);
   --color-sjMuted: rgba(17, 17, 17, 0.72);
 
-  --font-sans: "Helvetica Neue", Arial, sans-serif;
+  --font-sans: var(--font-neue-montreal), ui-sans-serif, system-ui, sans-serif;
+}
+
+/* Aliases for any styles that still reference --background / --foreground */
+:root {
+  --background: #efeae3;
+  --foreground: #111111;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    /* Studio Jamila stays on the beige canvas; we do not flip the whole site to near-black */
+    --background: #efeae3;
+    --foreground: #111111;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+  /* Keep native UI (scrollbars, inputs) aligned with the light page when OS is in dark mode */
+  color-scheme: light;
 }
 
 body {
@@ -17,10 +39,6 @@ body {
   font-weight: 300;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-}
-
-html {
-  scroll-behavior: smooth;
 }
 
 a {

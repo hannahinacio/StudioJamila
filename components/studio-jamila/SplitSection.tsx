@@ -10,9 +10,9 @@ export default function SplitSection({
   className?: string;
 }) {
   return (
-    <div className={`grid gap-14 xl:grid-cols-2 ${className}`}>
-      <div>{left}</div>
-      <div>{right}</div>
+    <div className={`grid items-stretch gap-10 lg:grid-cols-2 lg:gap-12 ${className}`}>
+      <div className="min-h-0">{left}</div>
+      <div className="min-h-0">{right}</div>
     </div>
   );
 }
