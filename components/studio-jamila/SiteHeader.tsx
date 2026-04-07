@@ -59,7 +59,7 @@ export default function SiteHeader({ variant = 'default' }: SiteHeaderProps) {
                   alt="Studio Jamila"
                   width={905}
                   height={90}
-                  className="h-[22px] w-auto md:h-[26px]"
+                  className="h-auto w-[calc(min(72vw,477px)*0.46)]"
                   priority
                   unoptimized
                 />
