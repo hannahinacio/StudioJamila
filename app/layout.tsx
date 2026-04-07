@@ -60,9 +60,8 @@ export const metadata: Metadata = {
   authors: [{ name: 'Studio Jamila' }],
   metadataBase: new URL('https://studiojamila.com'),
   icons: {
-    icon: ['/jami-favi-1.png', '/vhaifavi.png'],
-    shortcut: ['/jami-favi-1.png', '/vhaifavi.png'],
-    apple: ['/jami-favi-1.png', '/vhaifavi.png'],
+    icon: '/jami-favi-1.png',
+    apple: '/jami-favi-1.png',
   },
   openGraph: {
     type: 'website',
